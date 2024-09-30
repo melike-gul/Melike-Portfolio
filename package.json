@@ -1,13 +1,13 @@
 {
-  "name": "Melike Portfolio",
+  "name": "melike-portfolio",
   "version": "2.0.0",
   "author": "Melike GUL",
-  "private": true,
+  "private": false,
   "scripts": {
     "css": "postcss assets/styles/main.css -o assets/styles/main.min.css --verbose",
     "server-reload": "browser-sync start --config './browser-sync-config.js'",
     "develop": "concurrently 'npm:css -- --watch' 'npm:server-reload'",
-    "build": "npm run css -- --env 'production'",
+    "build": "your-build-command --output public",
     "format": "npx prettier ./**/*.html"
   },
   "browserslist": [
